@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="600px"
+    android:layout_height="match_parent">
+
+    <!--序号-->
+    <TextView
+        android:id="@+id/qianfeinum"
+        android:textSize="25px"
+        android:gravity="center"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <!--时间-->
+    <TextView
+        android:id="@+id/record_qianfeitime"
+        android:textSize="25px"
+        android:gravity="center"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+    <!--欠费金额-->
+    <TextView
+        android:id="@+id/record_qianfeimoney"
+        android:textSize="25px"
+        android:gravity="center"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

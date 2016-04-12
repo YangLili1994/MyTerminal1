@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--表地址-->
+    <TextView
+        android:id="@+id/meteraddr"
+        android:textSize="25px"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcyan"/>
+
+   <ImageView
+       android:layout_width="3dp"
+       android:layout_height="match_parent"
+       />
+    <!--表编号-->
+    <TextView
+        android:id="@+id/meterid"
+        android:textSize="25px"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcyan"/>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="match_parent" />
+    <!--用户编号-->
+    <TextView
+        android:id="@+id/userid"
+        android:textSize="25px"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcyan"/>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="match_parent" />
+    <!--用户地址-->
+    <TextView
+        android:id="@+id/useraddr"
+        android:textSize="25px"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcyan"/>
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="match_parent" />
+    <!--门牌号-->
+    <TextView
+        android:id="@+id/doornum"
+        android:textSize="25px"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="wrap_content"
+        android:background="@color/lightcyan"/>
+</LinearLayout>

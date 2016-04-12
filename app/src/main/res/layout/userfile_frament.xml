@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bisque">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="number"
+            >
+        </SearchView>
+        <Button
+            android:id="@+id/user_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:background="@color/lightgrey"
+            android:text="添加"
+            android:textSize="25px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700px"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/lightblue">
+
+        <!--表地址-->
+        <TextView
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="电表地址"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            />
+
+
+        <!--表编号-->
+        <TextView
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="电表编号"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+           />
+
+        <!--用户编号-->
+        <TextView
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="用户编号"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            />
+
+        <!--用户地址-->
+        <TextView
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="用户地址"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            />
+
+        <!--门牌号-->
+        <TextView
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="门牌号"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="700px"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black" />
+
+    <!--ListView控件-->
+    <ListView
+        android:layout_width="700px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/listView_userfiles">
+
+    </ListView>
+
+</LinearLayout>
