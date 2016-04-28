@@ -17,64 +17,174 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/detectfragment_doornum"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="门牌号："/>
-        <TextView
-            android:id="@+id/detectfragment_meterid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="表号："/>
-        <TextView
-            android:id="@+id/detectfragment_positiveactivepower"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="当前正向有功功率："/>
-        <TextView
-            android:id="@+id/detectfragment_reverseactivepower"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="当前反向有功功率："/>
-        <TextView
-            android:id="@+id/detectfragment_realtimevoltage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="实时电压"/>
-        <TextView
-            android:id="@+id/detectfragment_realtimecurrent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="实时电流"/>
-        <TextView
-            android:id="@+id/detectfragment_realtimetotalpower"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="实时总功率"/>
-        <TextView
-            android:id="@+id/detectfragment_realtimetotalpowerfactor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30px"
-            android:textColor="@color/black"
-            android:text="实时总功率因数"/>
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="                     门牌号："/>
+            <TextView
+                android:id="@+id/detectfragment_doornum"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="                         表号："/>
+            <TextView
+                android:id="@+id/detectfragment_meterid"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="当前正向有功功率："/>
+            <TextView
+                android:id="@+id/detectfragment_positiveactivepower"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="当前反向有功功率："/>
+            <TextView
+                android:id="@+id/detectfragment_reverseactivepower"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="                 实时电压："/>
+            <TextView
+                android:id="@+id/detectfragment_realtimevoltage"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="                 实时电流："/>
+            <TextView
+                android:id="@+id/detectfragment_realtimecurrent"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="             实时总功率："/>
+            <TextView
+                android:id="@+id/detectfragment_realtimetotalpower"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:textSize="25px"
+                android:textColor="@color/black"
+                android:text="     实时总功率因数："/>
+            <TextView
+                android:id="@+id/detectfragment_realtimetotalpowerfactor"
+                android:gravity="center"
+                android:layout_width="300px"
+                android:textSize="25px"
+                android:text="----"
+                android:textColor="@color/dodgerblue"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
     </LinearLayout>
 

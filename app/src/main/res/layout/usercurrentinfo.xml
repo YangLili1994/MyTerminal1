@@ -49,7 +49,7 @@
         android:orientation="horizontal"
         >
         <RelativeLayout
-            android:id="@+id/administer3_info_maindisp"
+            android:id="@+id/currentinfo_masterdisp"
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -73,35 +73,28 @@
             android:layout_weight="14"
             android:orientation="vertical">
             <Button
-                android:id="@+id/basicinfobutton"
+                android:id="@+id/billinfo_button"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:textSize="30px"
-                android:text="基本信息"
+                android:text="用电信息"
                 />
             <Button
-                android:id="@+id/filebutton"
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:textSize="30px"
-                android:text="用户档案"
-                />
-            <Button
-                android:id="@+id/communicationparametersbutton"
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:textSize="30px"
-                android:text="通讯参数"/>
-            <Button
-                android:id="@+id/return5"
+                android:id="@+id/return7"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:textSize="30px"
                 android:text="返回"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
 
 
         </LinearLayout>
@@ -121,7 +114,7 @@
         android:layout_weight="8"
         >
         <TextView
-            android:id="@+id/administer3_terminalinfo_currenttime"
+            android:id="@+id/usercurrentinfo_currenttime"
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:gravity="center_vertical"

@@ -49,6 +49,10 @@ public class UserQueryActivity  extends Activity {
                 historyrecordButton.setTextColor(getResources().getColor(R.color.black));
                 chargerecordButton.setTextColor(getResources().getColor(R.color.black));
 
+                startActivity(new Intent(UserQueryActivity.this,UserCurrentInfoActivity.class));
+
+
+
             }
         });
 

@@ -44,6 +44,12 @@ public class UserChargeRecordActivity extends Activity {
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                chargerecordButton.setTextColor(getResources().getColor(R.color.black));
+                fudianrecordButton.setTextColor(getResources().getColor(R.color.black));
+                owingrecordButton.setTextColor(getResources().getColor(R.color.black));
+                returnButton.setTextColor(getResources().getColor(R.color.blue));
+
                 finish();
             }
         });
@@ -51,6 +57,11 @@ public class UserChargeRecordActivity extends Activity {
         chargerecordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                chargerecordButton.setTextColor(getResources().getColor(R.color.blue));
+                fudianrecordButton.setTextColor(getResources().getColor(R.color.black));
+                owingrecordButton.setTextColor(getResources().getColor(R.color.black));
+                returnButton.setTextColor(getResources().getColor(R.color.black));
+
                 //fragment替代操作
                 FragmentManager fragmentManager =  getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -64,6 +75,11 @@ public class UserChargeRecordActivity extends Activity {
         fudianrecordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                chargerecordButton.setTextColor(getResources().getColor(R.color.black));
+                fudianrecordButton.setTextColor(getResources().getColor(R.color.blue));
+                owingrecordButton.setTextColor(getResources().getColor(R.color.black));
+                returnButton.setTextColor(getResources().getColor(R.color.black));
+
                 //fragment替代操作
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -77,6 +93,11 @@ public class UserChargeRecordActivity extends Activity {
         owingrecordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                chargerecordButton.setTextColor(getResources().getColor(R.color.black));
+                fudianrecordButton.setTextColor(getResources().getColor(R.color.black));
+                owingrecordButton.setTextColor(getResources().getColor(R.color.blue));
+                returnButton.setTextColor(getResources().getColor(R.color.black));
+
                 //fragment替代操作
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

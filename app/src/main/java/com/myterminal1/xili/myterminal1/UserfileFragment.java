@@ -40,9 +40,6 @@ public class UserfileFragment extends Fragment {
     }
 
 
-
-
-
 //    UserfilesDao dao = new UserfilesDao(MyApplication.getAppContext());
     UserfilesDao dao = null;
 

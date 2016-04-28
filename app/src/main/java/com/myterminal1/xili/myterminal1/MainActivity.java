@@ -42,13 +42,17 @@ public class MainActivity extends Activity {
         userloginButton = (Button)findViewById(R.id.userlogin);
         administerloginButton = (Button)findViewById(R.id.administerlogin);
 
+
+        Mytools.showMyToast(""+Mytools.isTablet(this), 1000);
+
+
         userloginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Mytools.showMyToast("用户登录成功！",1000);
+                Mytools.showMyToast("用户登录成功！", 1000);
 
-                Intent intent =  new Intent(MainActivity.this,User1Activity.class);
+                Intent intent = new Intent(MainActivity.this, User1Activity.class);
                 startActivity(intent);
 
             }

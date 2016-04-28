@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="液晶显示对比度："/>
+        <TextView
+            android:id="@+id/preference_zhuzhanaddress"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="           背光亮度："/>
+        <TextView
+            android:id="@+id/preference_apn"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="          系统时间："/>
+        <TextView
+            android:id="@+id/preference_port"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="       循环播放时间"/>
+        <TextView
+            android:id="@+id/preference_ipaddress"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="             本机IP："/>
+        <TextView
+            android:id="@+id/preference_localip"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="远程通讯状态："/>
+        <TextView
+            android:id="@+id/preference_communicationstate"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="         信号强度："/>
+        <TextView
+            android:id="@+id/preference_signalstrength"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="         心跳周期："/>
+        <TextView
+            android:id="@+id/heartbeatcycle"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="----"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -51,6 +51,13 @@ public class Administer3TerminalInfoActivity extends Activity{
                 communicationparameterButton.setTextColor(getResources().getColor(R.color.black));
                 returnButton.setTextColor(getResources().getColor(R.color.black));
 
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                BasicInfoFragment basicInfoFragment = new BasicInfoFragment();
+                fragmentTransaction.replace(R.id.administer3_info_maindisp, basicInfoFragment);
+                fragmentTransaction.commit();
+
+
             }
         });
         //用户档案查询与操作
@@ -81,6 +88,12 @@ public class Administer3TerminalInfoActivity extends Activity{
                 fileButton.setTextColor(getResources().getColor(R.color.black));
                 communicationparameterButton.setTextColor(getResources().getColor(R.color.blue));
                 returnButton.setTextColor(getResources().getColor(R.color.black));
+
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                CommunicationPreferenceFragment fragment = new CommunicationPreferenceFragment();
+                fragmentTransaction.replace(R.id.administer3_info_maindisp, fragment);
+                fragmentTransaction.commit();
 
             }
         });

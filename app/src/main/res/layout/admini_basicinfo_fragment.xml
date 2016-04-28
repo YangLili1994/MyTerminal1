@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="所在地址县码："/>
+        <TextView
+            android:id="@+id/basicinfo_xianma"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="0001"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="        终端地址："/>
+        <TextView
+            android:id="@+id/basicinfo_address"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="浙大路38号"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="    软件版本号："/>
+        <TextView
+            android:id="@+id/basicinfo_softversion"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="Version 1.0.1"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="    硬件版本号："/>
+        <TextView
+            android:id="@+id/basicinfo_hardversion"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="Version 1.0.1"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="        密钥版本："/>
+        <TextView
+            android:id="@+id/basicinfo_keyversion"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:text="Version 1.0.1"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

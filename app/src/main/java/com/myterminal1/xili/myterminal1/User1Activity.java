@@ -87,6 +87,8 @@ public class User1Activity extends Activity {
                 queryButton.setTextColor(getResources().getColor(R.color.black));
                 noticeButton.setTextColor(getResources().getColor(R.color.blue));
 
+                startActivity(new Intent(User1Activity.this,NoticeActivity.class));
+
             }
         });
 

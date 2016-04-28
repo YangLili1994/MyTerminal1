@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/bisque">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="客户名称："/>
+        <TextView
+            android:id="@+id/user1_name"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="       户号："/>
+        <TextView
+            android:id="@+id/user1_id"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="   门牌号："/>
+        <TextView
+            android:id="@+id/user1_door"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="   总电量："/>
+        <TextView
+            android:id="@+id/user1_totalelectric"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="剩余金额："/>
+        <TextView
+            android:id="@+id/user1_account"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px"
+            android:paddingBottom="40px"
+            android:textSize="25px"
+            android:textColor="@color/black"
+            android:text="结算时间："/>
+        <TextView
+            android:id="@+id/user1_accounttime"
+            android:gravity="center"
+            android:layout_width="300px"
+            android:textSize="25px"
+            android:textColor="@color/dodgerblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
