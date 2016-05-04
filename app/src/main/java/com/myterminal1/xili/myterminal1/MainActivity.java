@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.myterminal1.xili.myterminal1.Service.ListenToKeyService;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -34,6 +36,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        GoToListenToKeyService();
 
         timedisplayText = (TextView)findViewById(R.id.timedisplay);
         //最好有，否则页面加载1s后才有时间显示
@@ -83,6 +87,11 @@ public class MainActivity extends Activity {
 
         }).start();
 
+    }
+
+    private void GoToListenToKeyService(){
+        Intent startListenToKeySerivece = new Intent(this, ListenToKeyService.class);
+        startService(startListenToKeySerivece);
     }
 
 
