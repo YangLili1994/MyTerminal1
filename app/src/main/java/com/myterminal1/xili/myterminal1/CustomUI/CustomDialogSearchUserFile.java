@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.CustomUI;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -10,6 +10,10 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.myterminal1.xili.myterminal1.R;
+import com.myterminal1.xili.myterminal1.Entity.User;
+import com.myterminal1.xili.myterminal1.db.UserfilesDao;
 
 /**
  * Created by Administrator on 2016/4/11.
@@ -65,7 +69,7 @@ public class CustomDialogSearchUserFile extends Dialog {
 
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             // instantiate the dialog with the custom Theme
-            final CustomDialogSearchUserFile customDialogSearchUserFile = new CustomDialogSearchUserFile(context,R.style.Dialog,dialogListener);
+            final CustomDialogSearchUserFile customDialogSearchUserFile = new CustomDialogSearchUserFile(context, R.style.Dialog,dialogListener);
             View layout = inflater.inflate(R.layout.customdialog_searchuserfile,null);
 
 

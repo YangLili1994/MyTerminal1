@@ -1,10 +1,12 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
+
+import com.myterminal1.xili.myterminal1.R;
 
 /**
  * Created by Administrator on 2016/4/15.
@@ -15,7 +17,7 @@ public class NoticeActivity extends Activity {
     Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
-            timedisp.setText("  "+MainActivity.getCurrentTime());
+            timedisp.setText("  "+ MainActivity.getCurrentTime());
             timedisp.setTextColor(getResources().getColor(R.color.dodgerblue));
         }
     };

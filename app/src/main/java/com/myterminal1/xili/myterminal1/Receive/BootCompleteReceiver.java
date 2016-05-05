@@ -1,8 +1,10 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Receive;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+
+import com.myterminal1.xili.myterminal1.Activity.MainActivity;
 
 /**
  * Created by Administrator on 2016/4/13.

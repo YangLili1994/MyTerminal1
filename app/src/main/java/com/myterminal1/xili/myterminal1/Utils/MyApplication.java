@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Utils;
 
 import android.app.Application;
 import android.content.Context;

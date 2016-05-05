@@ -1,7 +1,5 @@
 package com.myterminal1.xili.myterminal1.Driver;
 
-import android.util.Log;
-
 /**
  * Created by WangTao on 2016/5/4.
  */
@@ -29,9 +27,8 @@ public class Key {
         status = Key.readKey1Status();
         /* 如果按键被按下，进入此if语句，并在按键被松开时返回1； 如果按键没有被按下，返回0 */
         if (status == Key.PRESSED){
-            while (Key.readKey0Status() == Key.PRESSED)
-                continue;
-            if(Key.readKey0Status() == Key.UNPRESSED)
+            while (Key.readKey1Status() == Key.PRESSED);
+            if(Key.readKey1Status() == Key.UNPRESSED)
                 return 1;
         }
         return 0;
@@ -43,9 +40,8 @@ public class Key {
         status = Key.readKey2Status();
         /* 如果按键被按下，进入此if语句，并在按键被松开时返回1； 如果按键没有被按下，返回0 */
         if (status == Key.PRESSED){
-            while (Key.readKey0Status() == Key.PRESSED)
-                continue;
-            if(Key.readKey0Status() == Key.UNPRESSED)
+            while (Key.readKey2Status() == Key.PRESSED);
+            if(Key.readKey2Status() == Key.UNPRESSED)
                 return 1;
         }
         return 0;

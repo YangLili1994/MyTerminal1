@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Fragment;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -12,6 +12,13 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import com.myterminal1.xili.myterminal1.CustomUI.CustomDialogAddUserFile;
+import com.myterminal1.xili.myterminal1.CustomUI.CustomDialogSearchUserFile;
+import com.myterminal1.xili.myterminal1.Utils.Mytools;
+import com.myterminal1.xili.myterminal1.R;
+import com.myterminal1.xili.myterminal1.Entity.User;
+import com.myterminal1.xili.myterminal1.db.UserfilesDao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -82,7 +89,7 @@ public class UserfileFragment extends Fragment {
                             if(resultCode == 1){//删除用户
                                 dao.delete(selectedUser.getMeter_addr());
                                 //Toast.makeText(getActivity(), "删除用户成功！", Toast.LENGTH_SHORT).show();
-                                Mytools.showMyToast("删除用户成功！",500);
+                                Mytools.showMyToast("删除用户成功！", 500);
                                 showAllUsers();
                             }else if (resultCode == 2){//修改用户档案信息
                                 dao.update(user);

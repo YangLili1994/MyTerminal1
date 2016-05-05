@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,14 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.myterminal1.xili.myterminal1.R;
+
 /**
- * Created by Administrator on 2016/4/11.
+ * Created by Administrator on 2016/4/15.
  */
-public class DetectFragment  extends Fragment{
+public class CommunicationPreferenceFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.detectfragment,container,false);
+        View rootView = inflater.inflate(R.layout.communicationpreferencefragment,container,false);
+
         return rootView;
     }
 }

@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import com.myterminal1.xili.myterminal1.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

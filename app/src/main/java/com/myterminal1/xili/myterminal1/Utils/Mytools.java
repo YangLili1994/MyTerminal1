@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Utils;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.myterminal1.xili.myterminal1.R;
 
 /**
  * Created by Administrator on 2016/4/11.

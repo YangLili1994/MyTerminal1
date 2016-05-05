@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.myterminal1.xili.myterminal1.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.myterminal1.xili.myterminal1.Utils.Mytools;
+import com.myterminal1.xili.myterminal1.R;
 import com.myterminal1.xili.myterminal1.Service.ListenToKeyService;
 
 import java.text.SimpleDateFormat;
@@ -37,7 +39,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GoToListenToKeyService();
+        startListenToKeyService();
 
         timedisplayText = (TextView)findViewById(R.id.timedisplay);
         //最好有，否则页面加载1s后才有时间显示
@@ -47,7 +49,7 @@ public class MainActivity extends Activity {
         administerloginButton = (Button)findViewById(R.id.administerlogin);
 
 
-        Mytools.showMyToast(""+Mytools.isTablet(this), 1000);
+        //Mytools.showMyToast("" + Mytools.isTablet(this), 1000);
 
 
         userloginButton.setOnClickListener(new View.OnClickListener() {
@@ -89,12 +91,10 @@ public class MainActivity extends Activity {
 
     }
 
-    private void GoToListenToKeyService(){
+    private void startListenToKeyService(){
         Intent startListenToKeySerivece = new Intent(this, ListenToKeyService.class);
         startService(startListenToKeySerivece);
     }
-
-
 
 
 }

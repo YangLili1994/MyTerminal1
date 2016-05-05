@@ -1,4 +1,4 @@
-package com.myterminal1.xili.myterminal1;
+package com.myterminal1.xili.myterminal1.Entity;
 
 /**
  * Created by Administrator on 2016/4/8.
