@@ -37,9 +37,13 @@ public class ListenToKeyService extends Service {
             @Override
             public void run() {
                 while(true){
-                    status0 = Key.Key0isPressed();
-                    status1 = Key.Key1isPressed();
-                    status2 = Key.Key2isPressed();
+                    try {
+                        status0 = Key.Key0isPressed();
+                        status1 = Key.Key1isPressed();
+                        status2 = Key.Key2isPressed();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
                     if (status0 == 1) {
                         Log.d("Driver_Key", "0PressedOnce");
                         Intent intent = new Intent("com.myterminal1.broadcast.KeyPressed");

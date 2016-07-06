@@ -2,6 +2,7 @@ package com.myterminal1.xili.myterminal1.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -9,9 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.myterminal1.xili.myterminal1.Utils.Mytools;
 import com.myterminal1.xili.myterminal1.R;
+import com.myterminal1.xili.myterminal1.Receive.NetworkChangeReceiver;
 import com.myterminal1.xili.myterminal1.Service.ListenToKeyService;
+import com.myterminal1.xili.myterminal1.Utils.Mytools;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,6 +40,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //广播接收器动态注册
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction("android.net.conn.CONNECTVITY_CHANGE");
+        NetworkChangeReceiver networkChangeReceiver = new NetworkChangeReceiver();
+        registerReceiver(networkChangeReceiver,intentFilter);
+
 
         startListenToKeyService();
 

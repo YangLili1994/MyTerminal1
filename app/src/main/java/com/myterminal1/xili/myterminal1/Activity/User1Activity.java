@@ -92,6 +92,8 @@ public class User1Activity extends MyBaseActivity {
         fudianButton.setTextColor(getResources().getColor(R.color.black));
         queryButton.setTextColor(getResources().getColor(R.color.black));
         noticeButton.setTextColor(getResources().getColor(R.color.black));
+
+        startActivity(new Intent(User1Activity.this,JianhangPayActivity.class));
     }
     void fudianButtonPressed(){
         chargeButton.setTextColor(getResources().getColor(R.color.black));
