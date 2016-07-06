@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     private TextView timedisplayText = null;
     private Button userloginButton = null;
     private Button administerloginButton = null;
+    private Button toUARTButton = null;
 
     //获取当前时间,24小时制
     public static String getCurrentTime(){
@@ -45,7 +46,7 @@ public class MainActivity extends Activity {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.net.conn.CONNECTVITY_CHANGE");
         NetworkChangeReceiver networkChangeReceiver = new NetworkChangeReceiver();
-        registerReceiver(networkChangeReceiver,intentFilter);
+        registerReceiver(networkChangeReceiver, intentFilter);
 
 
         startListenToKeyService();
@@ -56,6 +57,7 @@ public class MainActivity extends Activity {
 
         userloginButton = (Button)findViewById(R.id.userlogin);
         administerloginButton = (Button)findViewById(R.id.administerlogin);
+        toUARTButton = (Button)findViewById(R.id.ButtonToUART);
 
 
         //Mytools.showMyToast("" + Mytools.isTablet(this), 1000);
@@ -78,6 +80,13 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Mytools.showMyToast("管理员登录成功！",1000);
                 startActivity(new Intent(MainActivity.this,Administer1Activity.class));
+            }
+        });
+
+        toUARTButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, UARTActivity.class));
             }
         });
 

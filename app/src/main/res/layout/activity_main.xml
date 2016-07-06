@@ -26,6 +26,13 @@
             android:padding="10px"
             android:text="管理员"
             android:textSize="35px"/>
+        <Button
+            android:id="@+id/ButtonToUART"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="UART"
+            android:textSize="35px"/>
     </LinearLayout>
 
     <LinearLayout
