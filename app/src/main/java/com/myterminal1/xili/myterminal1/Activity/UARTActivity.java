@@ -45,32 +45,13 @@ public class UARTActivity extends AppCompatActivity {
 
     class manager implements View.OnClickListener {
         public void onClick(View v) {
-            String rxIdCode = "";
-            String str, afterEncode = null, content = null;
-
             int i;
             switch (v.getId()) {
                 //recvive
                 case R.id.UART_recv1:
-
                     Log.d(tag, "recv start ...");
-
-                    int[] RX = com3.Read();
-                    if(RX == null)
-                        return;
-
-                    //int[] ×ª»»Îª byte[]
-                    byte[] contentByteArray = intArrayToByteArray(RX);
-                    try {
-                        String contentGB2312 = new String(contentByteArray,"gbk");
-                        byte[] contentUTF8 = contentGB2312.getBytes("utf-8");
-                        content = new String(contentUTF8, "utf8");
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-
+                    String content = read(com3);
                     ET1.append(content);
-
                     break;
 
                 //send
@@ -93,6 +74,21 @@ public class UARTActivity extends AppCompatActivity {
         }
     }
 
+    private String read(UART com){
+        String content;
+        StringBuilder contentBuilder = new StringBuilder();
+        int[] RX = com.Read();
+
+        if(RX == null)
+            return new String("");
+        for (int b : RX) {
+            contentBuilder.append(Integer.toHexString(b));
+            contentBuilder.append(" ");
+        }
+        content = contentBuilder.toString();
+        return content;
+    }
+
     private byte[] intArrayToByteArray(int[] content){
         int index = 0;
         byte[] result = new byte[content.length];
@@ -101,7 +97,6 @@ public class UARTActivity extends AppCompatActivity {
         }
         return result;
     }
-
 
     static {
         System.loadLibrary("Hardware");
