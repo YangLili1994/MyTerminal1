@@ -10,6 +10,8 @@ import android.widget.EditText;
 import com.myterminal1.xili.myterminal1.Driver.UART;
 import com.myterminal1.xili.myterminal1.R;
 
+import java.io.UnsupportedEncodingException;
+
 public class UARTActivity extends AppCompatActivity {
 
     /****************************************/
@@ -44,7 +46,7 @@ public class UARTActivity extends AppCompatActivity {
     class manager implements View.OnClickListener {
         public void onClick(View v) {
             String rxIdCode = "";
-            String str;
+            String str, afterEncode = null, content = null;
 
             int i;
             switch (v.getId()) {
@@ -54,8 +56,20 @@ public class UARTActivity extends AppCompatActivity {
                     Log.d(tag, "recv start ...");
 
                     int[] RX = com3.Read();
-                    if(RX == null)return;
-                    ET1.append(new String(RX, 0, RX.length));
+                    if(RX == null)
+                        return;
+
+                    //int[] ×ª»»Îª byte[]
+                    byte[] contentByteArray = intArrayToByteArray(RX);
+                    try {
+                        String contentGB2312 = new String(contentByteArray,"gbk");
+                        byte[] contentUTF8 = contentGB2312.getBytes("utf-8");
+                        content = new String(contentUTF8, "utf8");
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+
+                    ET1.append(content);
 
                     break;
 
@@ -77,6 +91,15 @@ public class UARTActivity extends AppCompatActivity {
                     ET1.setText("");
             }
         }
+    }
+
+    private byte[] intArrayToByteArray(int[] content){
+        int index = 0;
+        byte[] result = new byte[content.length];
+        for (int i : content){
+            result[index++] = (byte) i ;
+        }
+        return result;
     }
 
 
